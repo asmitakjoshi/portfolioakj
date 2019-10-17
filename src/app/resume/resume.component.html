@@ -1,0 +1,127 @@
+<div class="pb-3">
+  <h1 class="title title--h1 title__separate">Resume</h1>
+</div>
+
+<div class="pb-0">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <h2 class="title title--h3"><img class="title-icon" src="assets/icons/icon-education.svg" alt="" /> Education</h2>
+      <div class="timeline">
+        <article class="timeline__item" *ngFor='let edu of education'>
+          <h5 class="title title--h5 timeline__title">{{edu.text1}}</h5>
+          <span class="timeline__period">{{edu.text2}}</span>
+          <p class="timeline__description">{{edu.text3}}</p>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <h2 class="title title--h3"><img class="title-icon" src="assets/icons/icon-experience.svg" alt="" /> Experience
+      </h2>
+      <div class="timeline">
+        <article class="timeline__item" *ngFor='let exp of experience'>
+          <h5 class="title title--h5 timeline__title">{{exp.text1}}</h5>
+          <span class="timeline__period">{{exp.text2}}</span>
+          <p class="timeline__description">{{exp.text3}}</p>
+        </article>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Skills -->
+<div class="box-inner box-inner--rounded">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <h2 class="title title--h3">Design Skills</h2>
+      <div class="box box__second">
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+
+      <h2 class="title title--h3">Coding Skills</h2>
+      <div class="box box__second">
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+        <div class="progress-parent" *ngFor='let no of number'>
+          <ngb-progressbar type="success" [value]="80">
+            <div class="progress-text">
+              <span>{{no.fte}}</span>
+              <span>{{no.ste}}</span>
+            </div>
+          </ngb-progressbar>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

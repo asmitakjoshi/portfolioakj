@@ -1,0 +1,22 @@
+ <!-- About -->
+ <div class="pb-2">
+        <h1 class="title title--h1 title__separate">Blog</h1>
+    </div>
+
+    <!-- News -->
+    <div class="news-grid pb-0">
+        
+        <article class="news-item box" *ngFor='let item of blog'>
+            <div class="news-item__image-wrap overlay overlay--45">
+                <div class="news-item__date">{{item.date}}</div>
+                <a class="news-item__link" routerLink="/"></a>
+                <img class="cover lazyload" src="{{item.img}}" alt="" />
+            </div>
+            <div class="news-item__caption">
+                <h2 class="title title--h4">{{item.ftext}}</h2>
+                <p>{{item.stext}}</p>
+            </div>
+        </article>
+
+    
+    </div>

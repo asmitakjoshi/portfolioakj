@@ -1,0 +1,19 @@
+ <main class="main" (scroll)="onWindowScroll($event);">
+        <div class="container gutter-top">
+            <div class="row sticky-parent">
+                <aside class="col-12 col-md-12 col-xl-3">
+                <app-sidebar></app-sidebar>
+                </aside>
+
+                <div class="col-12 col-md-12 col-xl-9">
+                    <div class="box pb-0">
+                       <app-navbar></app-navbar>
+                       <router-outlet></router-outlet>
+                    </div>
+
+                    <footer class="footer">© 2019 Asmita_Portfolio</footer>
+                </div>
+            </div>
+        </div>
+    </main>
+
